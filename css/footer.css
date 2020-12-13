@@ -1,0 +1,51 @@
+/**
+* FOOTER
+**/
+.footer-rrss{
+    background-color: #BDC4A7;
+    padding: 20px;
+    text-align: center;
+}
+.footer-rrss input{
+    border: none;
+    padding-left: 15px;
+    height: 30px;
+    width: 20%;
+    border-radius: 15px;
+}
+.footer-rrss input[type="submit"]{
+    width: 10%;
+    margin-left: -30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.footer-rrss i{
+    font-size: 2.5rem;
+    margin-top: 15px;
+}
+.footer-rrss i:hover{
+    font-size: 2rem;
+    transition: font-size .4s;
+}
+
+.footer-legals{
+    background-color: #2f2f2f;
+    padding: 5px;
+}
+.footer-legals span{
+    color: white;
+    font-size: small;
+}
+.footer-legals a{
+    color: white;
+    font-size: small;
+}
+
+
+@media(max-width:768px){
+    .footer-rrss input{
+        width: 50%;
+    }
+    .footer-rrss input[type="submit"] {
+        width: 35%;
+}

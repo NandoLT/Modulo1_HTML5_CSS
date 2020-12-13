@@ -1,0 +1,246 @@
+
+.title-film{
+    padding:30px;
+    font-size: x-large;
+    font-weight: 600;
+}
+.separator{
+    width: 45%;
+}
+.container-main{
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr;
+    grid-gap: 30px;
+    padding: 30px;
+    height: auto;
+    width: 75%;
+    margin:auto;
+}
+
+.film-cover{
+    position: relative;
+}
+.film-cover a{
+    position: absolute;
+    left: 85%;
+    bottom: 20px;
+    background-color: white;
+    border-radius: 100px;
+    height: 60px;
+    padding-bottom: 67px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.film-cover a i{
+    font-size: 60px;
+    color: black;
+    margin-top: -15px;
+}
+.film-cover a i:hover{
+    color: #80866d;
+}
+/**
+*Modal para ver trailer en .film-cover
+**/
+.trailer-film{
+    width: 100%;
+}
+@-webkit-keyframes modal-appearance {
+    from {top:-300px;opacity: 0;}
+    to {top:300px;opacity:1;}
+}
+@keyframes modal-appearance {
+    from {top:-300px;opacity: 0;}
+    to {top:300px;opacity:1;}
+}
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #bdc4a771;
+}
+.modal:target {
+    display: block;
+    position: absolute;
+}
+.modal-dialog {
+    /* display: table-cell; */
+    display: flex;
+}
+#modal-trailer .modal-dialog .modal-content {
+    top:300px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 675px;
+    background-color: #f3f3f3;
+    position: relative;
+    border: 1px #777 solid;
+    width: 100%;
+    box-shadow: 0px 0px 5px 1px;
+
+    -webkit-animation-name: modal-appearance; 
+    -webkit-animation-duration: 0.5s; 
+    animation-name: modal-appearance;
+    animation-duration: 0.5s;
+}
+.btn-close {
+    text-decoration: none;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-close:hover,
+.btn-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container {
+    padding: 2px 16px;
+}
+/**------**/
+
+
+.sinopsis-text{ 
+    font-size: large;
+    text-align: justify;
+    padding: 15px;
+}
+
+.info-extra{
+    background-color: rgba(189, 188, 188, 0.082);
+    padding: 15px
+}
+.info-extra tr:nth-child(even){
+    background-color: #c7c5c5;
+}
+.info-extra tr td{
+    padding: 4px;
+}
+.info-extra tr:hover {
+    background-color: rgb(105, 104, 104);
+}
+
+.info-extra th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.info-extra .info-item{
+    font-size: large;
+    font-weight: 600;
+    width: 50%;
+}
+.info-extra .info-complete{
+    font-size: large;
+}
+
+.film-in-category{
+    margin-top: 30px;
+}
+.film-in-category h2{
+    text-align: center;
+    padding-top: 15px;
+}
+.film-in-category ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.film-in-category ul li{
+    padding: 30px;
+}
+.film-in-category ul li img{
+    width: 200px;
+}
+.separator-film-in-category{
+    margin: auto;
+    width: 50%;
+}
+
+.tag-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+.tag-list button{
+    border:none;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+/**
+*Media Queries
+**/
+
+@media(max-width:1550px){
+    .sinopsis-text{
+        grid-column: 2 / 4;
+    }
+    .info-extra{
+        grid-column: 1 / 4;
+    }
+}
+@media(max-width:1100px){
+    .container-main{
+        width: 90%;
+    }
+}
+@media(max-width:830px){
+    .container-main{
+        width: 100%;
+    }
+}
+@media(max-width:725px){
+    .film-cover{
+        grid-column: 1 / 4;
+        margin-left: 30%;
+    }
+    .sinopsis-text{
+        grid-column: 1 / 4;
+    }
+    .film-cover a {
+        left: 55%;
+    }
+
+}
+@media(max-width:675px) and (min-width:575px){
+    .film-cover a {
+        left: 65%;
+    }
+}
+@media(max-width:576px) and (min-width:450px){
+    .film-cover{
+        margin-left: 15%;
+    }
+    .film-cover a {
+        left: 73%;
+    }
+}
+@media(max-width:449px) and (min-width:375px){
+    .film-cover{
+        margin-left:7%;
+    }
+    .film-cover a {
+        left: 78%;
+    }
+}
+@media(max-width:374px){
+    .film-cover{
+        margin-left: 1%;
+    }
+    .film-cover a {
+        left: 85%;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYFY-O-Rama</title>
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/sinopsis.css">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@8af0edd/css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header class="container">
+        <div class="logo-header">
+            <img src="./imagenes/iconos/syfy_logo_menu.png" alt="">
+        </div>
+        <nav class="menu-nav">
+            <label for="menu-responsive" class="menu-hamburguer"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="menu-responsive">
+            <ul class="menu-items" id="menu-hamburguer-items">
+                <li><a href="404.html">Inicio</a></li>
+                <li><a href="404.html">Categorías</a></li>
+                <li><a href="404.html">Novedades</a></li>
+                <li><a href="404.html">SYFY Originals</a></li>
+            </ul>
+        </nav>
+        <div class="search-nav">
+            <form action="#" method="post">
+                <input type="search" name="searching" id="searching" placeholder="Buscar...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="user-menu">
+            <ul>
+                <li>
+                    <i class="fas fa-user-alien"></i>
+                    <i class="fad fa-chevron-double-down"></i>
+                    <ul class="user-menu-submenu">
+                        <li><i class="fas fa-sign-in-alt"></i> <a href="login.html">Acceder</a></li>
+                        <li><i class="far fa-question-circle"></i> <a href="404.html">Ayuda</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="title-film">
+        BLADE RUNNER
+        <hr class="separator">
+    </div>
+    <!-- Modal para reproducir trailer-->
+    <div id="modal-trailer" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="container">
+                    <a href="#" class="closebtn">×</a>
+                </header>
+                <div class="container">
+                    <video class="trailer-film" controls>
+                        <source src="./video/trailer-blade-runner.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de modal-->
+    <main class="container-main">
+        
+        <section class="film-cover">
+            <img src="./imagenes/peliculas/blade_runner.jpg" alt="blade runner">
+            <a href="#modal-trailer"><i class=""><i class="fad fa-play-circle"></i></i></a>
+        </section>
+        <section class="sinopsis-text">
+                <p>
+                    Noviembre de 2019. A principios del siglo XXI, la poderosa Tyrell Corporation creó, 
+                    gracias a los avances de la ingeniería genética, un robot llamado Nexus 6, 
+                    un ser virtualmente idéntico al hombre pero superior a él en fuerza y agilidad, al que se dio el nombre de Replicante. 
+                    Estos robots trabajaban como esclavos en las colonias exteriores de la Tierra. Después de la sangrienta rebelión de un equipo de Nexus-6, 
+                    los Replicantes fueron desterrados de la Tierra. Brigadas especiales de policía, los Blade Runners, 
+                    tenían órdenes de matar a todos los que no hubieran acatado la condena. Pero a esto no se le llamaba ejecución, 
+                    se le llamaba "retiro". Tras un grave incidente, el ex Blade Runner Rick Deckard es llamado de nuevo al servicio para encontrar y 
+                    "retirar" a unos replicantes rebeldes.
+                </p>
+        </section>
+        <section class="info-extra">
+            <table>
+                <tr>
+                    <td class="info-item">Título Original</td>
+                    <td class="info-complete">Blade Runner</td>
+                </tr>
+                <tr>
+                    <td class="info-item">Año</td>
+                    <td class="info-complete">1982</td>
+                </tr>
+                <tr>
+                    <td class="info-item">Duración</td>
+                    <td class="info-complete">117 min.</td>
+                </tr>
+                <tr>
+                    <td class="info-item">País</td>
+                    <td class="info-complete">Estados Unidos</td>
+                </tr>
+                <tr>
+                    <td class="info-item">Diracción</td>
+                    <td class="info-complete">RidleyScott</td>
+                </tr>
+                <tr>
+                    <td class="info-item">Guión</td>
+                    <td class="info-complete">David Webb Peoples, Hampton Fancher</td>
+                </tr>
+                <tr>
+                    <td class="info-item">Reparto</td>
+                    <td class="info-complete">Harrison Ford, Rutger Hauer, Sean Young, Daryl Hannah</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <section class="film-in-category">
+        <hr class="separator-film-in-category">
+        <h2>Películas en la misma categoría</h2>
+        <ul>
+            <li class="item-in-category"><img src="./imagenes/peliculas/inception.jpg" alt=""></li>
+            <li class="item-in-category"><img src="./imagenes/peliculas/metropolis.jpg" alt=""></li>
+            <li class="item-in-category"><img src="./imagenes/peliculas/interstellar.jpg" alt=""></li>
+            <li class="item-in-category"><img src="./imagenes/peliculas/alien.jpg" alt=""></li>
+            <li class="item-in-category"><img src="./imagenes/peliculas/the_matrix.jpg" alt=""></li>
+            <li class="item-in-category"><img src="./imagenes/peliculas/stalker.jpg" alt=""></li>
+        </ul>
+        <div class="tag-list"> <strong>Tags:</strong>
+            <button class="tag-item">Futuro</button>
+            <button class="tag-item">Tecnología</button>
+            <button class="tag-item">Distopía</button>
+        </div>
+    </section>
+    <footer>
+        <section class="footer-rrss">
+            <form action="" method="post">
+                <label><h3>Suscríbete a nuestra Newsletter</h3></label>
+                <br>
+                <input type="email" name="newsletter" id="newsletter" placeholder="E-mail">
+                <input type="submit" value="enviar">
+            </form>
+            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://pinterest.com"></a><i class="fab fa-pinterest-square"></i></a>
+            <a href="https://imdb.com"></a><i class="fab fa-imdb"></i></a>
+        </section>
+        <section class="footer-legals">
+                <a href="404.html">Aviso Legal</a> <span>||</span> <a href="404.html">Política de privacidad</a>
+        </section>
+    </footer>
+</body>
+</html>

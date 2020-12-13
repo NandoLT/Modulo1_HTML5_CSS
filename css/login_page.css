@@ -1,0 +1,171 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+}
+html,body {
+    height:100%;
+    margin:0;
+}
+body{
+    background: rgb(105,105,105);
+    background: -moz-linear-gradient(0deg, rgba(105,105,105,1) 0%, rgba(194,194,194,1) 43%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(105,105,105,1) 0%, rgba(194,194,194,1) 43%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(105,105,105,1) 0%, rgba(194,194,194,1) 43%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#696969",endColorstr="#ffffff",GradientType=1);
+}
+main{
+    background: url('/imagenes/bck_imgs/the_traveler_crop.png') no-repeat right bottom;
+    height: inherit;
+}
+
+header#logo-login {
+    display: flex;
+    justify-content: center;
+}
+
+main section form#login_form {
+    width: 15%;
+    height: auto;
+    border: 1px solid rgba(158, 158, 158, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px 1px rgba(168, 168, 168, 0.5);
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+form{
+    padding: 35px;
+    background-color: whitesmoke;
+}
+form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 10px;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgba(100, 100, 100, 0.5)
+
+}
+form button[type="submit"] {
+    width: 100%;
+    border: none;
+    height: 30px;
+    background-color: #646464;
+    color: #ffffff;
+    font-size: medium;
+    border-radius: 10px;
+    margin-bottom: 15px;;
+}
+form button[type="submit"]:hover {
+    background-color: #444343;
+    font-weight: 600;
+}
+
+
+#after_login {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#after_login input{
+    display: inline-block;
+    width: auto;
+}
+#after_login label{
+    width: 40%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444343;
+}
+#after_login a{
+    text-align: right;
+    text-decoration: none;
+    color: #444343;
+}
+#after_login a:hover{
+    color: black;
+}
+
+
+#login_form h4{
+    line-height: 1;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #767676;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    background-color: whitesmoke;
+    padding: 0 5px 0 5px;
+}
+#login_form h4 strong{
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(31, 31, 31);
+}
+.new_user {
+    text-align: center;
+    position: relative;
+}
+.new_user:after{
+    content: "";
+    width: 100%;
+    display: block;
+    border-top: 1px solid #1f1f1f;
+    position: absolute;
+    top: 53%;
+}
+form button#new_reg {
+    width: 100%;
+    border: none;
+    height: 30px;
+    background-color: #b1af38;
+    color: #ffffff;
+    font-size: medium;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+form button#new_reg:hover {
+    background-color: #6d6c23;
+    font-weight: 600;
+}
+
+/**
+* Sección para establecer los 
+* Media Queries
+*/
+
+@media(max-width:1500px){
+    main{
+        background-size: 45%;
+    }
+    main section form#login_form{
+        width: 25%;
+    }
+}
+
+@media(max-width:800px){
+    main{
+        background: none;
+    }
+    main section form#login_form{
+        width: 35%;
+    }
+}
+
+@media(max-width:550px){
+    main section form#login_form{
+        width: 50%;
+    }
+}
+
+@media(max-width:375px){
+    header#logo-login img{
+        width: 80%;
+    }
+    main section form#login_form{
+        width: 65%;
+    }
+}
